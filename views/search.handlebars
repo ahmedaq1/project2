@@ -1,0 +1,143 @@
+<div class="container" for="type of person">
+
+    <form method="POST" action="">
+        <br>
+        <h2>Search for </h2>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="personSearch1" name="personSearch" class="custom-control-input">
+            <label class="custom-control-label" for="personSearch1">All</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="personSearch2" name="personSearch" class="custom-control-input">
+            <label class="custom-control-label" for="personSearch2">Teacher</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="personSearch3" name="personSearch" class="custom-control-input">
+            <label class="custom-control-label" for="personSearch3">Volunteer</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="personSearch4" name="personSearch" class="custom-control-input">
+            <label class="custom-control-label" for="personSearch4">Search for Indivdual</label>
+        </div>
+        <button class="btn btn-primary -sm" type="submit">Apply</button>
+    </form>
+
+</div>
+<div class="container" for="teacher inquiry">
+
+    <form method="POST" action="">
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="teacherSearch1" name="teacherSearch" class="custom-control-input">
+            <label class="custom-control-label" for="teacherSearch1">All Teachers</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="teacherSearch2" name="teacherSearch" class="custom-control-input">
+            <label class="custom-control-label" for="teacherSearch2">Custom Search</label>
+        </div>
+        <button class="btn btn-primary -sm" type="submit">Apply</button>
+
+    </form>
+
+</div>
+
+<Div class="container" for="teacher">
+    <form>
+        <h2>Teacher search</h2>
+
+        <div class="form-group">
+            <label for="exampleFormControlInput1">First Name</label>
+            <input type="text" class="form-control" id="fName" placeholder="First Name">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Last Name</label>
+            <input type="text" class="form-control" id="lName" placeholder="Last Name">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Phone</label>
+            <input type="text" class="form-control" id="phoneSearch" placeholder="Phone">
+        </div>
+        <div class="form-group">
+            <label class="my-1 mr-2" for="teacherSubject">Subject</label>
+            <select class="custom-select my-1 mr-sm-2" id="subjectSearch">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="my-1 mr-2" for="teacherLevelSearch">Level</label>
+            <select class="custom-select my-1 mr-sm-2" id="levelSearch">
+                <option selected>Choose...</option>
+                <option value="1">Low</option>
+                <option value="2">Intermediate</option>
+                <option value="3">Upper Intermediate</option>
+                <option value="4">Advanced</option>
+            </select>
+        </div>
+        <button class="btn btn-primary -sm" id="teacherSearchB" type="submit">Search</button>
+
+    </form>
+
+
+</div>
+
+
+</Div>
+
+
+<div class="container" for="volunteerSearch">
+    <form method="POST" action="">
+
+        <h2>Volunteer search</h2>
+
+        <div class="form-group">
+            <label for="exampleFormControlInput1">First Name</label>
+            <input type="text" class="form-control" id="fName" placeholder="First Name">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Last Name</label>
+            <input type="text" class="form-control" id="lName" placeholder="Last Name">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Phone</label>
+            <input type="text" class="form-control" id="phoneSearch" placeholder="Phone">
+        </div>
+
+
+        <legend class="col-form-label col-sm-2 pt-0">Area of participation</legend>
+        <div class="col-sm-10">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="vArea" id="vArea1" value="option1" checked>
+                <label class="form-check-label" for="vArea1">
+                    Food
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="vArea" id="vArea2" value="option2">
+                <label class="form-check-label" for="vArea2">
+                    Administration
+
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="vArea" id="vArea3" value="option2">
+                <label class="form-check-label" for="vArea3">
+                    Cleaning
+
+                </label>
+            </div>
+
+
+            <div class="form-check disabled">
+                <input class="form-check-input" type="radio" name="vArea" id="vArea4" value="option3" disabled>
+                <label class="form-check-label" for="vArea4">
+                    All
+                </label>
+            </div>
+
+            <button class="btn btn-primary -sm" type="submit">Search</button>
+    </form>
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/search.js"></script>
