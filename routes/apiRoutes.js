@@ -1,24 +1,35 @@
 var db = require("../models");
 
 module.exports = function(app) {
-  // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+    // Get all student
+    app.get("/api/home", function(req, res) {
+        db.Teachers.findAll({}).then(function(dbExamples) {
+            res.json(dbExamples);
+        });
     });
-  });
 
-  // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+    // Create a new Teacher
+    app.post("/api/home", function(req, res) {
+        db.Teachers.create(req.body).then(function(sundaySchooldb) {
+            res.json(sundaySchooldb);
+        });
     });
-  });
 
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
+    app.get("/api/search", function(req, res) {
+        console.log(req.body);
+        // db.Teachers.findOne({
+        //     where: {
+
+        //     }
+        // }).then(function(sundaySchooldb) {
+        //     console.log(sundaySchooldb);
+        //     res.json(sundaySchooldb);
+        // });
     });
-  });
+
+    app.delete("/api/home/:id", function(req, res) {
+        db.Teachers.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
+            res.json(dbExample);
+        });
+    });
 };

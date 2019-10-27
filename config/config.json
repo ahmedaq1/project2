@@ -2,7 +2,7 @@
     "development": {
         "username": "root",
         "password": "OneCup0fJava!",
-        "database": "exampledb",
+        "database": "sundaySchooldb",
         "host": "localhost",
         "dialect": "mysql"
     },
